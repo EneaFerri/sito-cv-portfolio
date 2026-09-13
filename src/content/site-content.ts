@@ -132,11 +132,32 @@ export const experience: ExperienceItem[] = [
 export const skills: SkillGroup[] = [
   {
     title: { it: "Competenze avanzate", en: "Advanced" },
-    items: ["Python", "Java", "HTML", "SQL", "MySQL", "Excel"],
+    items: [
+      "Python",
+      "Java",
+      "HTML",
+      "SQL",
+      "MySQL",
+      "Excel",
+      "JavaScript",
+      "TypeScript",
+      "Data Structures & Algorithms",
+    ],
   },
   {
     title: { it: "Competenze intermedie", en: "Intermediate" },
-    items: ["C#", "React", "PostgreSQL"],
+    items: [
+      "C#",
+      "React",
+      "PostgreSQL",
+      "Machine Learning",
+      "Cybersecurity",
+      "Networking",
+    ],
+  },
+  {
+    title: { it: "Soft skills", en: "Soft skills" },
+    items: ["Problem Solving", "Teamwork", "Communication"],
   },
   {
     title: { it: "Lingue", en: "Languages" },
