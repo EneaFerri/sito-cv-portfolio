@@ -36,6 +36,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# personal source documents (not needed by the site itself)
+*.pdf
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
