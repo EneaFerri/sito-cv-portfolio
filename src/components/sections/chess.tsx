@@ -23,9 +23,6 @@ export function Chess() {
             <h2 className="font-[family-name:var(--font-display)] text-2xl font-semibold tracking-tight sm:text-3xl">
               {t(chess.title)}
             </h2>
-            <p className="max-w-md text-balance text-muted-foreground">
-              {t(chess.subtitle)}
-            </p>
             <Button
               size="lg"
               className="mt-2 bg-brand text-brand-foreground hover:bg-brand/90"

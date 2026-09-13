@@ -174,16 +174,13 @@ export const skills: SkillGroup[] = [
 export const projects: ProjectItem[] = [];
 
 export const chess = {
-  title: { it: "Mi sfidi a scacchi?", en: "Fancy a game of chess?" } satisfies Localized,
-  subtitle: {
-    it: "Ok, questa non c'entra col CV. Ma se pensi di essere più bravo di me, dimostralo: sono IronsEnea su Chess.com e aspetto la tua mossa.",
-    en: "Okay, this one has nothing to do with the résumé. But if you think you can beat me, prove it: I'm IronsEnea on Chess.com, waiting for your move.",
-  } satisfies Localized,
+  title: { it: "Scacco matto!", en: "Checkmate!" } satisfies Localized,
+
   username: "IronsEnea",
   url: "https://www.chess.com/member/IronsEnea",
   cta: {
-    it: "Sfidami su Chess.com",
-    en: "Challenge me on Chess.com",
+    it: "Sfidami su Chess.com!",
+    en: "Challenge me on Chess.com!",
   } satisfies Localized,
 };
 
