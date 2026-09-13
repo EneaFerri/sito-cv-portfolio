@@ -86,8 +86,8 @@ export const education: EducationItem[] = [
       en: "Master's Degree in Computer Science and Engineering",
     },
     description: {
-      it: "Prosecuzione degli studi dopo la laurea triennale in Ingegneria Informatica.",
-      en: "Continuing studies after the Bachelor's degree in Computer Engineering.",
+      it: "Specializzazione magistrale in Cybersecurity e sviluppo software intelligente.",
+      en: "Specialization in Cybersecurity and intelligent software development.",
     },
   },
   {
