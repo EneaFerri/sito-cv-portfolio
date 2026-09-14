@@ -35,7 +35,6 @@ export const nav: { id: string; label: Localized }[] = [
   { id: "experience", label: { it: "Esperienze", en: "Experience" } },
   { id: "skills", label: { it: "Competenze", en: "Skills" } },
   { id: "projects", label: { it: "Progetti", en: "Projects" } },
-  { id: "chess", label: { it: "Scacchi", en: "Chess" } },
   { id: "contact", label: { it: "Contatti", en: "Contact" } },
 ];
 
