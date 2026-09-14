@@ -1,14 +1,16 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, Moon, Sun, X } from "lucide-react";
 import { useLanguage } from "@/lib/i18n";
+import { useTheme } from "@/lib/theme";
 import { nav, hero } from "@/content/site-content";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 export function Navbar() {
   const { lang, toggleLang, t } = useLanguage();
+  const { theme, toggleTheme } = useTheme();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -50,6 +52,17 @@ export function Navbar() {
 
         <div className="hidden items-center gap-3 md:flex">
           <button
+            onClick={toggleTheme}
+            className="flex size-7 items-center justify-center rounded-full border border-border text-muted-foreground transition-colors hover:border-brand hover:text-foreground"
+            aria-label="Toggle theme"
+          >
+            {theme === "dark" ? (
+              <Sun className="size-3.5" />
+            ) : (
+              <Moon className="size-3.5" />
+            )}
+          </button>
+          <button
             onClick={toggleLang}
             className="rounded-full border border-border px-3 py-1 text-xs font-medium text-muted-foreground transition-colors hover:border-brand hover:text-foreground"
             aria-label="Toggle language"
@@ -83,15 +96,31 @@ export function Navbar() {
                 {t(item.label)}
               </a>
             ))}
-            <button
-              onClick={() => {
-                toggleLang();
-                setOpen(false);
-              }}
-              className="mt-2 self-start rounded-full border border-border px-3 py-1 text-xs font-medium text-muted-foreground"
-            >
-              {lang === "it" ? "Switch to EN" : "Passa a IT"}
-            </button>
+            <div className="mt-2 flex items-center gap-2">
+              <button
+                onClick={() => {
+                  toggleLang();
+                  setOpen(false);
+                }}
+                className="self-start rounded-full border border-border px-3 py-1 text-xs font-medium text-muted-foreground"
+              >
+                {lang === "it" ? "Switch to EN" : "Passa a IT"}
+              </button>
+              <button
+                onClick={() => {
+                  toggleTheme();
+                  setOpen(false);
+                }}
+                className="flex size-7 items-center justify-center rounded-full border border-border text-muted-foreground"
+                aria-label="Toggle theme"
+              >
+                {theme === "dark" ? (
+                  <Sun className="size-3.5" />
+                ) : (
+                  <Moon className="size-3.5" />
+                )}
+              </button>
+            </div>
           </nav>
         </div>
       )}
