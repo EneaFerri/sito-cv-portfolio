@@ -45,8 +45,8 @@ export const hero = {
     en: "Computer Engineering Student",
   } satisfies Localized,
   tagline: {
-    it: "Studio al Politecnico di Milano e lavoro occasionalmente in ambito AI e Data Analytics. Mi appassionano lo sviluppo software e le soluzioni intelligenti per automatizzare processi.",
-    en: "Studying at Politecnico di Milano, currently interning in AI and Data Analytics. Passionate about software development and smart automation.",
+    it: "Studio al Politecnico di Milano e lavoro occasionalmente in ambito AI e Data Analytics. Mi appassionano lo sviluppo software e le soluzioni intelligenti.",
+    en: "Studying at Politecnico di Milano, currently working in AI and Data Analytics. Passionate about software development and smart automation.",
   } satisfies Localized,
   location: {
     it: "Milano, Italia",
@@ -70,8 +70,8 @@ export const about = {
       en: "I'm a Computer Engineering student at Politecnico di Milano, currently pursuing a Master's in Computer Science and Engineering after my Bachelor's. My path started with a technical-commercial diploma and evolved into software development, AI, data analysis and Cybersecurity.",
     },
     {
-      it: "Sto svolgendo esperienze in ambito AI e Data Analytics, dove sviluppo soluzioni per l'automazione di processi aziendali e l'analisi di dati industriali. Sono curioso, mi piace imparare cose nuove e sono aperto a nuove opportunità nel campo tech, fintech ed e-commerce.",
-      en: "I'm currently gaining experience in AI and Data Analytics, building solutions for business process automation and industrial data analysis. I'm curious, enjoy learning new things, and I'm open to new opportunities in tech, fintech, and e-commerce.",
+      it: "Sto svolgendo esperienze in ambito AI e Data Analytics, dove sviluppo soluzioni per l'automazione di processi aziendali e l'analisi di dati industriali. Sono curioso, mi piace imparare cose nuove e sono aperto a nuove opportunità nel campo tech, fintech ed automazione industriale.",
+      en: "I'm currently gaining experience in AI and Data Analytics, building solutions for business process automation and industrial data analysis. I'm curious, enjoy learning new things, and I'm open to new opportunities in tech, fintech, and industrial automation.",
     },
   ] satisfies Localized[],
 };
@@ -184,7 +184,7 @@ export const chess = {
 };
 
 export const contact = {
-  title: { it: "Parliamone", en: "Let's talk" } satisfies Localized,
+  title: { it: "Scrivimi!", en: "Let's talk!" } satisfies Localized,
   subtitle: {
     it: "Sono aperto a opportunità, collaborazioni e a due chiacchiere.",
     en: "I'm open to opportunities, collaborations, and a chat.",
